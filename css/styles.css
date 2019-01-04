@@ -1,11 +1,11 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Special+Elite');
 
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
-  --color-lose: #D94545;
+  --color-win: #558b5c;
+  --color-lose: #c33f0f;
   --color-start: #5b85b7;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
@@ -20,7 +20,8 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Special Elite', cursive;
+  /*font-family: 'Montserrat', sans-serif;*/
 }
 
 body {
@@ -36,14 +37,22 @@ li, ol, ul {
 }
 
 h2 {
+  font-family: 'Poiret One', cursive;
   margin: 0;
   text-transform: uppercase;
   font-size: var(--font-size-large);
   margin: 0;
+  background: -webkit-linear-gradient(#704a01, #2b1801);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1 {
+  font-family: 'Poiret One', cursive;
   font-size: 30px;
+  background: -webkit-linear-gradient(#2b1801, #704a01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -62,7 +71,11 @@ button {
 
 #btn__reset {
 	width: 200px;
+  height: 200px;
 	margin: 0 auto;
+  border-radius: 59% 59%;
+  background-image: radial-gradient(circle at 60% 40%, #ffffff 5%, #bd9062 60%, #ffffff 140%);
+  box-shadow: -5px 5px 20px -1px #403011;
 }
 
 .main-container {
@@ -101,6 +114,18 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+  background-image: linear-gradient(to top, #ffffff, #e4c4a3, #ffffff);
+  box-shadow: 0px .5px 1px 0px #000000;
+}
+
+.first {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.last {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .space {
@@ -110,16 +135,17 @@ button {
 
 
 .show {
-  color: #fff;
+  color: #250f01;
   background-color: #4ac0d5;
   font-size: 20px;
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
   margin-right: 2px;
-  border-radius: 5px;
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
+  background-image: linear-gradient(to top, #fc962c, #e4c4a3, #fc962c);
+  box-shadow: 0px 0px;
 }
 
 
@@ -143,14 +169,7 @@ button {
 }
 
 .btn__reset {
-  padding: 16px;
-  margin: 50px auto;
-  background: #f7a964;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  border-bottom: solid 4px rgba(0, 0, 0, .3);
-  border-right: solid 3px rgba(0, 0, 0, .3)
+
 }
 
 .btn__reset:active {
@@ -159,6 +178,80 @@ button {
   border-right: solid 3px rgba(0, 0, 0, 0);
 }
 
+/* My exceed expectations styles. https://designmodo.com/3d-css3-button/ used as base */
+.key {
+  color: #d1b063;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(bottom, #4e2b15 0%, #654a34 100%);
+  background-image: -o-linear-gradient(bottom, #4e2b15 0%, #654a34 100%);
+  background-image: -moz-linear-gradient(bottom, #4e2b15 0%, #654a34 100%);
+  background-image: -webkit-linear-gradient(bottom, #4e2b15 0%, #654a34 100%);
+  background-image: -ms-linear-gradient(bottom, #4e2b15 0%, #654a34 100%);
+
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 6px 0px #130e05, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 6px 0px #130e05, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0px 6px 0px #130e05, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+
+.chosen {
+  background-image: linear-gradient(bottom, #a35b18 0%, #e2c88f 100%);
+  background-image: -o-linear-gradient(bottom, #a35b18 0%, #e2c88f 100%);
+  background-image: -moz-linear-gradient(bottom, #a35b18 0%, #e2c88f 100%);
+  background-image: -webkit-linear-gradient(bottom, #a35b18 0%, #e2c88f 100%);
+  background-image: -ms-linear-gradient(bottom, #a35b18 0%, #e2c88f 100%);
+
+  -webkit-box-shadow: 0px 2px 0px #deb464, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 2px 0px #deb464, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0px 2px 0px #deb464, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.wrong {
+  background-image: linear-gradient(bottom, #5d330d 0%, #a35b18 100%);
+  background-image: -o-linear-gradient(bottom, #5d330d 0%, #a35b18 100%);
+  background-image: -moz-linear-gradient(bottom, #5d330d 0%, #a35b18 100%);
+  background-image: -webkit-linear-gradient(bottom, #5d330d 0%, #a35b18 100%);
+  background-image: -ms-linear-gradient(bottom, #5d330d 0%, #a35b18 100%);
+
+  -webkit-box-shadow: 0px 2px 0px #a35b18, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 2px 0px #a35b18, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0px 2px 0px #a35b18, 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.key:hover {
+  background-image: linear-gradient(bottom, #f5eda5 0%, #f9f3df 100%);
+  background-image: -o-linear-gradient(bottom, #f5eda5 0%, #f9f3df 100%);
+  background-image: -moz-linear-gradient(bottom, #f5eda5 0%, #f9f3df 100%);
+  background-image: -webkit-linear-gradient(bottom, #f5eda5 0%, #f9f3df 100%);
+  background-image: -ms-linear-gradient(bottom, #f5eda5 0%, #f9f3df 100%);
+}
+
+.img-author {
+  font-size: .5em;
+  color: #a2790a;
+}
+
+.img-author a {
+  color: #a2790a;
+}
 
 /* Overlay */
 
@@ -180,7 +273,7 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #6d7494;
 }
 
 .start a {
@@ -196,7 +289,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: #e06309;
 }
 
 .lose a {
